@@ -33,28 +33,7 @@ from isort.settings import DEFAULT_SECTIONS, default, from_path, should_skip
 from .pie_slice import itemsview
 
 
-INTRO = r"""
-/#######################################################################\
-
-     `sMMy`
-     .yyyy-                                                      `
-    ##soos##                                                    ./o.
-          `     ``..-..`         ``...`.``         `   ```` ``-ssso```
-     .s:-y-   .+osssssso/.     ./ossss+:so+:`    :+o-`/osso:+sssssssso/
-     .s::y-   osss+.``.``     -ssss+-.`-ossso`   ssssso/::..::+ssss:::.
-     .s::y-   /ssss+//:-.`   `ssss+     `ssss+   sssso`       :ssss`
-     .s::y-   `-/+oossssso/  `ssss/      sssso   ssss/        :ssss`
-     .y-/y-       ````:ssss`  ossso.    :ssss:   ssss/        :ssss.
-     `/so:`    `-//::/osss+   `+ssss+-/ossso:    /sso-        `osssso/.
-       \/      `-/oooo++/-      .:/++:/++/-`      ..           `://++/.
-
-
-         isort your Python imports for you so you don't have to
-
-                            VERSION {0}
-
-\########################################################################/
-""".format(__version__)
+INTRO = r"""{0}""".format(__version__)
 
 
 def iter_source_code(paths, config, skipped):
