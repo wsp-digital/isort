@@ -461,7 +461,7 @@ class SortImports(object):
                     if force_grid_wrap and len(from_imports) >= force_grid_wrap:
                         do_multiline_reformat = True
 
-                    if len(import_statement) > self.config['line_length'] and len(from_imports) > 1:
+                    if len(from_imports) > 1:
                         do_multiline_reformat = True
 
                     # If line too long AND have imports AND we are NOT using GRID or VERTICAL wrap modes
