@@ -226,8 +226,8 @@ def _get_config_data(file_path, sections):
                     break
                 last_position = config_file.tell()
 
-        config = configparser.SafeConfigParser()
-        config.readfp(config_file)
+        config = configparser.ConfigParser(strict=False)
+        config.read_file(config_file)
         settings = {}
         for section in sections:
             if config.has_section(section):
